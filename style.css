@@ -780,6 +780,80 @@ img { max-width: 100%; display: block; }
 }
 
 /* ===========================
+   BLOG
+   =========================== */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.blog-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+.blog-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+  border-color: rgba(29, 53, 87, 0.2);
+}
+.blog-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.blog-date {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+.blog-reading-time {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+.blog-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+.blog-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 0.85rem;
+}
+.blog-card p:last-of-type {
+  margin-bottom: 1.5rem;
+}
+.blog-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+.blog-tags span {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.3rem 0.75rem;
+  border-radius: 20px;
+  background: rgba(29, 53, 87, 0.06);
+  color: var(--navy);
+  border: 1px solid rgba(29, 53, 87, 0.12);
+}
+
+/* ===========================
    CONTACT
    =========================== */
 .contact-grid {
@@ -914,6 +988,7 @@ footer {
   .achieve-grid { grid-template-columns: 1fr; }
   .achieve-card.featured { grid-column: auto; }
   .community-grid { grid-template-columns: repeat(2, 1fr); }
+  .blog-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .hero-stats { gap: 1.5rem; padding: 1rem 1.5rem; }
 }
@@ -946,6 +1021,7 @@ footer {
   }
   .stat-divider { width: 60px; height: 1px; }
   .community-grid { grid-template-columns: 1fr 1fr; }
+  .blog-grid { grid-template-columns: 1fr; }
   .achieve-card { flex-direction: column; }
   .footer-inner { flex-direction: column; gap: 1rem; text-align: center; }
   #navbar { padding: 1.2rem 1.5rem; }
@@ -957,4 +1033,5 @@ footer {
   .community-grid { grid-template-columns: 1fr; }
   .hero-actions { flex-direction: column; width: 100%; max-width: 280px; margin-left: auto; margin-right: auto; }
   .btn-primary, .btn-outline { justify-content: center; }
+  .blog-meta { flex-direction: column; gap: 0.5rem; }
 }
