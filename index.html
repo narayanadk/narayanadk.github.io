@@ -1,173 +1,568 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Narayan Adhikari</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Narayan Adhikari — Civil Engineer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header class="nav center">
-        <p class="logo"></p>
-        <input type="checkbox" name="" class="checkBtn">
-        <ol class="center">
-            <a href="#About"><li>About</li></a>
-            <a href="#Education"><li>Education</li></a>
-            <a href="#Involvement"><li>Involvement</li></a>
-            <a href="#Links"><li>Links</li></a>
-            <a href="#Contact"><li>Contact</li></a>
-        </ol>
-    </header>
-    <section class="main">
-        <div class="box">
-            <h1>Narayan Adhikari</h1>
-            <p>
-                Civil Engineering Student
-            </p>
-            <button class="btn">
-                <a href="https://batwrites.blogspot.com/" target="_blank">
-                    My Blog
-                </a>
-            </button>
-        </div>
-        <img src="./Images/nobg-1-1.png" alt="My photo">
-    </section>
 
-    <!-- about -->
-    <div class="about center" id="About">
-        <div class="box_wrap">
-            <p class="heading">About</p>
-            <p class="text">Hello! My name is Narayan Adhikari, a Civil Engineering Student
-                            from Pulchowk Campus, IoE, TU
-            </p>
-        </div>
-        <div class="box_wrap"> 
-            <p class="heading">Skills</p>
-            <div class="skills_box">
-                <i class="fab fa-html5 fa-3x"></i>
-                <i class="fab fa-css3-alt fa-3x"></i>
-                <i class="fab fa-js fa-3x"></i>
-                <i class="fab fa-node-js fa-3x"></i>
-                <i class="fab fa-react fa-3x"></i>
-            </div>
-        </div>
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">NA</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
+  </nav>
 
-
-    <!-- education -->
-    <div class="education center" id="Education">
-        <div class="left_box">
-            <h1 class="heading">Education</h1>
-            <div class="container">
-                <h3>Prashanti Academy</h3>
-                <img src="./Images/prashanti_logo.png" class="logo">
-                <p>SEE (2020)</p>
-                <small>April 2006-2020</small>
-            </div>
-            <div class="container">
-                <h3>Trinity International SS & College</h3>
-                <img src="./Images/trinitylogo.png" class="logo">
-                <p>Science</p>
-                <small>Oct 2020- 2022</small>
-            </div>
-        </div>
-        <div class="right_box">
-            <img src="./Images/trinity build_auto_x2.jpg" alt="">
-        </div>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <p class="hero-tag reveal">Civil Engineering Student &amp; Community Leader</p>
+      <h1 class="hero-name reveal">Narayan<br><em>Adhikari</em></h1>
+      <p class="hero-sub reveal">
+        Pulchowk Campus, IoE, TU &nbsp;·&nbsp; Kathmandu, Nepal
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#contact" class="btn-primary">Get in Touch</a>
+        <a href="#projects" class="btn-outline">View Projects</a>
+      </div>
+      <div class="hero-socials reveal">
+        <a href="https://www.linkedin.com/in/narayanadk" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/narayanadk" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.facebook.com/adhikary.narayankumar" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/narayan_adk/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://batwrites.blogspot.com/" target="_blank" aria-label="Blog"><i class="fas fa-pen-nib"></i></a>
+      </div>
     </div>
-
-    <!-- Involvement -->
-    <div class="Involvement center" id="Involvement">
-        <h3>Involvement</h3>
-        <ul>
-            <li>
-                <small>2015-Current</small>
-                <p>Trainer</p>
-                <p>Nepal Scout</p>
-                <img src="./Images/Nepal_Scout-nobg.png" class="logo">
-            </li>
-            <li>
-                <small>2019-Current</small>
-                <p>Treasurer</p>
-                <p>Kathmandu District Child Club Network (KDCCN)</p>
-                <img src="./Images/KDCCN_logo-nobg.png" class="logo">
-            </li>
-            <li>
-                <small>2019-Current</small>
-                <p>President</p>
-                <p>Budhanilkantha-12 Ward Child Club</p>
-                <img src="./Images/coatarm.png" class="logo">
-                <img src="./Images/budhanilkantha.png" class="logo">
-            </li>
-            <li>
-                <small>2019-Current</small>
-                <p>Executive</p>
-                <p>Budhanilkantha Municipality Child Club Network</p>
-                <img src="./Images/coatarm.png" class="logo">
-                <img src="./Images/budhanilkantha.png" class="logo">
-            </li>
-        </ul>
+    <div class="hero-stats reveal">
+      <div class="stat">
+        <span class="stat-num">3+</span>
+        <span class="stat-label">Years at Pulchowk</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">5+</span>
+        <span class="stat-label">Roles &amp; Positions</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">4</span>
+        <span class="stat-label">Engineering Projects</span>
+      </div>
     </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
 
-    <!-- Links -->
-    <div class="Links center" id="Links">
-        <h3>Links</h3>
-        <div class="container">
-            <a href="https://www.facebook.com/prashanti2061" target="_blank">
-                <div>Prashanti Academy</div>
-            </a>
-            <a href="http://trinitycollege.edu.np/" target="_blank">
-               <div>Trinity Intl College</div>
-            </a>
-            <a href="https://www.facebook.com/KDCCN" target="_blank">
-               <div>KDCCN</div>
-            </a>
-            <a href="https://nepalscouts.org/" target="_blank">
-                <div>Nepal Scout</div>
-            </a>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label reveal">01 / About</div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-heading">Building structures,<br><em>building communities.</em></h2>
+          <p>
+            I'm an ambitious and dedicated Civil Engineering student at Pulchowk Campus, Institute of Engineering, Tribhuvan University, with a strong foundation in structural and environmental engineering.
+          </p>
+          <p>
+            Beyond the classroom, I lead community programs, organize large-scale engineering events, and collaborate with international chapters of Engineers Without Borders to drive real-world impact — from water supply systems in rural Nepal to seismic resilience research.
+          </p>
+          <p>
+            I believe engineering is ultimately about people. I bring strong leadership, analytical thinking, and cross-cultural collaboration skills to every project I undertake.
+          </p>
         </div>
+        <div class="about-skills reveal">
+          <h3>Technical Skills</h3>
+          <div class="skill-tags">
+            <span class="tag">AutoCAD</span>
+            <span class="tag">ETABS</span>
+            <span class="tag">Structural Analysis</span>
+            <span class="tag">Python</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">GIS &amp; Contour Mapping</span>
+            <span class="tag">Field Inspection</span>
+            <span class="tag">Report Writing</span>
+            <span class="tag">Estimation &amp; Costing</span>
+          </div>
+          <h3 style="margin-top:2rem;">Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="tag tag-soft">Leadership</span>
+            <span class="tag tag-soft">Team Coordination</span>
+            <span class="tag tag-soft">Logistical Planning</span>
+            <span class="tag tag-soft">Analytical Thinking</span>
+            <span class="tag tag-soft">Adaptability</span>
+            <span class="tag tag-soft">Resilience</span>
+          </div>
+          <div class="about-contact-info">
+            <a href="mailto:kumaradk123456@gmail.com"><i class="fas fa-envelope"></i> kumaradk123456@gmail.com</a>
+            <a href="tel:+9779869666182"><i class="fas fa-phone"></i> +977-9869666182</a>
+            <span><i class="fas fa-map-marker-alt"></i> Budhanilkantha-12, Kathmandu</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Contact -->
-    <div class="contact center" id="Contact">
-        <h3>Contact</h3>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-label reveal">02 / Experience</div>
+      <h2 class="section-heading reveal">Where I've <em>contributed.</em></h2>
+      <div class="timeline">
 
-        <div class="center social">
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/adhikary.narayankumar" target="_blank">
-                        <i class="fab fa-facebook" aria-hidden="true">    
-                        </i>
-                     </a>
-                 </li>
-                 <li>
-                    <a href="https://www.instagram.com/narayan_adk/" target="_blank">
-                        <i class="fab fa-instagram" aria-hidden="true">    
-                        </i>
-                     </a>
-                 </li>
-                 <li>
-                    <a href="https://github.com/narayanadk" target="_blank">
-                        <i class="fab fa-github" aria-hidden="true">    
-                        </i>
-                     </a>
-                 </li>
-                 <li>
-                    <a href="https://discordapp.com/users/c'est moi#3373/" target="_blank">
-                        <i class="fab fa-discord" aria-hidden="true">    
-                        </i>
-                     </a>
-                 </li>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Nov 2025 — Present</div>
+          <div class="timeline-card">
+            <div class="timeline-role">President</div>
+            <div class="timeline-org">Engineers Without Borders Pulchowk</div>
+            <div class="timeline-loc"><i class="fas fa-location-dot"></i> Pulchowk, Lalitpur</div>
+            <ul class="timeline-bullets">
+              <li>Initiated and led a community WASH project in collaboration with EWB Madison Professional.</li>
+              <li>Coordinated with EWB CU Boulder to support a drinking water supply project in Illam.</li>
             </ul>
-            </div>  
-        
-        <form action="" class="center" method="get">
-            <input type="text" name="" id="" placeholder="Full Name">
-            <input type="email" name="" id="" placeholder="Email Address">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Type Your Text Here"></textarea>
-            <button class="btn">SUBMIT</button>
-        </form>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Oct 2025</div>
+          <div class="timeline-card">
+            <div class="timeline-role">Civil Engineer Intern</div>
+            <div class="timeline-org">City Planning Commission, Kathmandu Metropolitan City</div>
+            <div class="timeline-loc"><i class="fas fa-location-dot"></i> Kathmandu, Nepal</div>
+            <ul class="timeline-bullets">
+              <li>Assisted in post-fire structural damage assessment of the Kathmandu District/Special Attorney's Office.</li>
+              <li>Conducted field inspections evaluating rebar deformation, cracking, buckling, and fire-damage indicators.</li>
+              <li>Contributed to estimation, documentation, and reporting for the City Planning Commission.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">May 2025 — Jul 2025</div>
+          <div class="timeline-card">
+            <div class="timeline-role">Research Intern</div>
+            <div class="timeline-org">Solid Waste Management Consortium (SWMC)</div>
+            <div class="timeline-loc"><i class="fas fa-location-dot"></i> Kathmandu, Nepal</div>
+            <ul class="timeline-bullets">
+              <li>Collaborated with municipalities across Nepal for data collection, analysis, and reporting on solid waste management systems.</li>
+              <li>Focused research on circular economy principles to promote sustainable waste handling and resource recovery.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Nov 2024 — Nov 2025</div>
+          <div class="timeline-card">
+            <div class="timeline-role">Secretary</div>
+            <div class="timeline-org">Engineers Without Borders Pulchowk</div>
+            <div class="timeline-loc"><i class="fas fa-location-dot"></i> Pulchowk, Lalitpur</div>
+            <ul class="timeline-bullets">
+              <li>Coordinated communications with global EWB chapters including Sweden, CU Boulder, Georgia Tech, and University of Florida.</li>
+              <li>Facilitated international collaborations and strengthened the chapter's global network for knowledge sharing and joint initiatives.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Apr 2024 — Jul 2025</div>
+          <div class="timeline-card">
+            <div class="timeline-role">Event Manager</div>
+            <div class="timeline-org">PDSC (Plan | Design | Solve | Create)</div>
+            <div class="timeline-loc"><i class="fas fa-location-dot"></i> Pulchowk, Lalitpur</div>
+            <ul class="timeline-bullets">
+              <li>Organized workshops and webinars with 500+ online registrations and 100+ in-person participants.</li>
+              <li>Led events on AutoCAD, ETABS, Blockchain, LLMs, and Python for automation — empowering engineering students with practical skills.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
     </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-label reveal">03 / Education</div>
+      <h2 class="section-heading reveal">Academic <em>background.</em></h2>
+      <div class="edu-grid">
+
+        <div class="edu-card reveal">
+          <div class="edu-degree">Bachelor of Engineering — Civil</div>
+          <div class="edu-school">Pulchowk Campus, Institute of Engineering (IoE), Tribhuvan University</div>
+          <div class="edu-meta">
+            <span class="edu-date"><i class="fas fa-calendar"></i> Dec 2022 — Present</span>
+            <span class="edu-loc"><i class="fas fa-location-dot"></i> Pulchowk, Lalitpur</span>
+          </div>
+          <div class="edu-badge current">Current</div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-degree">+2 Science (School Leaving Certificate)</div>
+          <div class="edu-school">Trinity International SS &amp; College</div>
+          <div class="edu-meta">
+            <span class="edu-date"><i class="fas fa-calendar"></i> Oct 2020 — May 2022</span>
+            <span class="edu-loc"><i class="fas fa-location-dot"></i> Kathmandu</span>
+          </div>
+          <div class="edu-note">Excellence Award recipient, 2022</div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-degree">Secondary Education Examination (SEE)</div>
+          <div class="edu-school">Prashanti Academy</div>
+          <div class="edu-meta">
+            <span class="edu-date"><i class="fas fa-calendar"></i> Apr 2007 — Apr 2020</span>
+            <span class="edu-loc"><i class="fas fa-location-dot"></i> Kathmandu</span>
+          </div>
+          <div class="edu-note">Student of the Year, 2020</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <div class="section-label reveal">04 / Projects</div>
+      <h2 class="section-heading reveal">Engineering <em>in action.</em></h2>
+      <div class="project-grid">
+
+        <div class="project-card reveal">
+          <div class="project-icon"><i class="fas fa-train-subway"></i></div>
+          <h3>Personal Rapid Transit (PRT)</h3>
+          <p>Analyzed the feasibility of PRT as a sustainable transport solution for Nepal's urban and geographic context. Designed and built a functional prototype demonstrating potential to reduce traffic congestion and emissions.</p>
+          <div class="project-tags">
+            <span>Sustainable Transport</span>
+            <span>Prototype Design</span>
+            <span>EWB UK</span>
+            <span>UNESCO</span>
+          </div>
+          <div class="project-note">Reshaping Transport Design Challenge — EWB UK, UNESCO &amp; HVT</div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-icon"><i class="fas fa-building-columns"></i></div>
+          <h3>Seismic Performance of CNT-Reinforced RCC Structures</h3>
+          <p>Presented at the 7th Expo Science Asia (Milset Asia). Conducted seismic performance analysis of multistory RCC structures using CNT-reinforced concrete through numerical modeling and response spectrum analysis.</p>
+          <div class="project-tags">
+            <span>Structural Engineering</span>
+            <span>ETABS</span>
+            <span>Seismic Analysis</span>
+            <span>CNT Composites</span>
+          </div>
+          <div class="project-note">Milset Asia — 7th Expo Science Asia</div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-icon"><i class="fas fa-droplet"></i></div>
+          <h3>Water Supply System Design — Phoolbari, Nepal</h3>
+          <p>Collaborated with EWB-UF on water supply system design for Shree Mathurapati Secondary School. Conducted site survey including contour mapping, elevation calculation, and soil testing.</p>
+          <div class="project-tags">
+            <span>WASH</span>
+            <span>Site Survey</span>
+            <span>Contour Mapping</span>
+            <span>EWB-UF</span>
+          </div>
+          <div class="project-note">Engineers Without Borders — University of Florida</div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-icon"><i class="fas fa-toilet"></i></div>
+          <h3>Community Sanitation Assessment — Bhadaure Village</h3>
+          <p>Performed socio-technical assessment focusing on low-cost toilet feasibility in a resource-constrained, hilly terrain setting in Dhading District.</p>
+          <div class="project-tags">
+            <span>Sanitation</span>
+            <span>Community Assessment</span>
+            <span>Dhading District</span>
+          </div>
+          <div class="project-note">Community WASH Initiative</div>
+        </div>
+
+        <div class="project-card reveal wide">
+          <div class="project-icon"><i class="fas fa-wind"></i></div>
+          <h3>Air Quality Index Prediction &amp; Monitoring Web Application</h3>
+          <p>Developed a web-based ML prototype for AQI prediction and monitoring in Kathmandu, providing early health alerts and location-wise comparisons using Python and Streamlit. Co-authored a published journal paper on the work.</p>
+          <div class="project-tags">
+            <span>Machine Learning</span>
+            <span>Python</span>
+            <span>Streamlit</span>
+            <span>Air Quality</span>
+            <span>Published Research</span>
+          </div>
+          <div class="project-note">
+            <i class="fas fa-award"></i> 1st Runner-Up — National Ideathon, KVLC Pulchowk &amp; CESS Nepal &nbsp;|&nbsp;
+            <i class="fas fa-book"></i> Published in Journal of Environment Sciences, Vol. XI, July 2025
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <div class="section-label reveal">05 / Achievements &amp; Awards</div>
+      <h2 class="section-heading reveal">Recognition &amp; <em>milestones.</em></h2>
+
+      <div class="achieve-grid">
+
+        <div class="achieve-card reveal featured">
+          <div class="achieve-icon"><i class="fas fa-book-open"></i></div>
+          <div class="achieve-content">
+            <div class="achieve-type">Journal Publication</div>
+            <h3>Web Application Prototype on Air Quality Index Prediction, Monitoring, and Information Dissemination System</h3>
+            <p class="achieve-detail">Machine Learning and Python-Streamlit-based Application Tailored for Kathmandu Metropolitan City</p>
+            <p class="achieve-meta">Adhikari, N., Sapkota, R., Subedi, M., Subedi, C.</p>
+            <p class="achieve-meta">Journal of Environment Sciences (Volume XI) &nbsp;·&nbsp; July 14, 2025</p>
+            <p class="achieve-meta">Department of Environment, Babarmahal, Kathmandu</p>
+          </div>
+        </div>
+
+        <div class="achieve-card reveal">
+          <div class="achieve-icon"><i class="fas fa-trophy"></i></div>
+          <div class="achieve-content">
+            <div class="achieve-type">Competition</div>
+            <h3>1st Runner-Up — National Ideathon</h3>
+            <p class="achieve-detail">Delivered an innovative ML-based AQI monitoring solution addressing critical environmental and public health challenges.</p>
+            <p class="achieve-meta">KVLC Pulchowk &amp; CESS Nepal</p>
+          </div>
+        </div>
+
+        <div class="achieve-card reveal">
+          <div class="achieve-icon"><i class="fas fa-medal"></i></div>
+          <div class="achieve-content">
+            <div class="achieve-type">Scholarship</div>
+            <h3>Golden Jubilee Scholarship (GJSS)</h3>
+            <p class="achieve-detail">Selected as one of 200 scholars nationwide for academic excellence under a highly competitive scheme for undergraduate students across disciplines in Nepal.</p>
+            <p class="achieve-meta">Embassy of India &nbsp;·&nbsp; 2025</p>
+          </div>
+        </div>
+
+        <div class="achieve-card reveal">
+          <div class="achieve-icon"><i class="fas fa-star"></i></div>
+          <div class="achieve-content">
+            <div class="achieve-type">Award</div>
+            <h3>Excellence Award</h3>
+            <p class="achieve-detail">Recognized for outstanding academic achievements at the school level.</p>
+            <p class="achieve-meta">Trinity International SS &amp; College &nbsp;·&nbsp; 2022</p>
+          </div>
+        </div>
+
+        <div class="achieve-card reveal">
+          <div class="achieve-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="achieve-content">
+            <div class="achieve-type">Award</div>
+            <h3>Student of the Year</h3>
+            <p class="achieve-detail">Recognized for exceptional academic and extra-curricular achievements.</p>
+            <p class="achieve-meta">Prashanti Academy &nbsp;·&nbsp; 2020</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section id="community" class="section section-alt">
+    <div class="container">
+      <div class="section-label reveal">06 / Community Involvement</div>
+      <h2 class="section-heading reveal">Giving back to the <em>community.</em></h2>
+      <div class="community-grid">
+
+        <div class="community-card reveal">
+          <div class="comm-icon"><i class="fas fa-campground"></i></div>
+          <div class="comm-role">Trainer</div>
+          <div class="comm-org">Nepal Scout</div>
+          <div class="comm-date">2015 — Present</div>
+        </div>
+
+        <div class="community-card reveal">
+          <div class="comm-icon"><i class="fas fa-child-reaching"></i></div>
+          <div class="comm-role">Treasurer</div>
+          <div class="comm-org">Kathmandu District Child Club Network (KDCCN)</div>
+          <div class="comm-date">2019 — Present</div>
+        </div>
+
+        <div class="community-card reveal">
+          <div class="comm-icon"><i class="fas fa-users"></i></div>
+          <div class="comm-role">President</div>
+          <div class="comm-org">Budhanilkantha-12 Ward Child Club</div>
+          <div class="comm-date">2019 — Present</div>
+        </div>
+
+        <div class="community-card reveal">
+          <div class="comm-icon"><i class="fas fa-sitemap"></i></div>
+          <div class="comm-role">Executive</div>
+          <div class="comm-org">Budhanilkantha Municipality Child Club Network</div>
+          <div class="comm-date">2019 — Present</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-label reveal">07 / Contact</div>
+      <h2 class="section-heading reveal">Let's <em>connect.</em></h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-intro">I'm always open to new opportunities, collaborations, and conversations. Whether it's an engineering project, a community initiative, or just a chat — feel free to reach out.</p>
+          <div class="contact-links">
+            <a href="mailto:kumaradk123456@gmail.com" class="contact-link">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <span class="cl-label">Email</span>
+                <span class="cl-value">kumaradk123456@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+9779869666182" class="contact-link">
+              <i class="fas fa-phone"></i>
+              <div>
+                <span class="cl-label">Phone</span>
+                <span class="cl-value">+977-9869666182</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/narayanadk" target="_blank" class="contact-link">
+              <i class="fab fa-linkedin"></i>
+              <div>
+                <span class="cl-label">LinkedIn</span>
+                <span class="cl-value">linkedin.com/in/narayanadk</span>
+              </div>
+            </a>
+            <a href="https://github.com/narayanadk" target="_blank" class="contact-link">
+              <i class="fab fa-github"></i>
+              <div>
+                <span class="cl-label">GitHub</span>
+                <span class="cl-value">github.com/narayanadk</span>
+              </div>
+            </a>
+            <a href="https://batwrites.blogspot.com/" target="_blank" class="contact-link">
+              <i class="fas fa-pen-nib"></i>
+              <div>
+                <span class="cl-label">Blog</span>
+                <span class="cl-value">batwrites.blogspot.com</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="What would you like to say?" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width">Send Message <i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2025 Narayan Adhikari. Built with passion.</span>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/narayanadk" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/narayanadk" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/narayan_adk/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(el => observer.observe(el));
+
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Mobile nav toggle
+    const toggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      toggle.classList.toggle('active');
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        toggle.classList.remove('active');
+      });
+    });
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(sec => {
+        if (window.scrollY >= sec.offsetTop - 120) current = sec.getAttribute('id');
+      });
+      document.querySelectorAll('.nav-links a').forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+      });
+    });
+
+    // Contact form (demo — opens mail client)
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const msg = document.getElementById('message').value;
+      window.location.href = `mailto:kumaradk123456@gmail.com?subject=Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(msg)}%0A%0AFrom: ${encodeURIComponent(email)}`;
+    });
+
+    // Scroll hint fade on scroll
+    const scrollHint = document.querySelector('.scroll-hint');
+    window.addEventListener('scroll', () => {
+      if (scrollHint) scrollHint.style.opacity = window.scrollY > 80 ? '0' : '1';
+    });
+  </script>
 </body>
 </html>
